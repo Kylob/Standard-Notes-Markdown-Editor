@@ -444,7 +444,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       if (window.simplemde.isPreviewActive()) {
         window.simplemde.togglePreview();
       }
-      window.simplemde.toggleSideBySide();
+      window.simplemde.togglePreview();
     }
   });
 
@@ -478,10 +478,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     spellChecker: false,
     status: false,
     toolbar: [
-		"side-by-side", "preview", "fullscreen",
+		"preview", "side-by-side",
 		"|", "heading", "bold", "italic",
 		"|", "quote", "unordered-list", "code",
-		"|", "table", "image", "link"
+		"|", "table", "image", "link",
+		"|", "fullscreen"
 	]
   });
 
