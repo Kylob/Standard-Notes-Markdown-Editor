@@ -13,3 +13,5 @@ This flavor incorporates [hightlight.js](https://highlightjs.org/download/), and
 * __Ctrl-Alt-T__(able)
 * __Ctrl-Alt-M__(age) [sic]
 * __Ctrl-Alt-U__(RL) Link
+
+To use, click the Standard Notes "Extensions" => "Import Extension" => Enter Extension Link: https://listed.standardnotes.org/IiZveqQEDr.json
