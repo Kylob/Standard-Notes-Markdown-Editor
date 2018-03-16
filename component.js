@@ -442,9 +442,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
       initialLoad = false;
       window.simplemde.codemirror.getDoc().clearHistory();
       if (window.simplemde.isPreviewActive()) {
-        window.simplemde.togglePreview(); /* clear previous */
+        window.simplemde.togglePreview();
       }
-      window.simplemde.togglePreview(); /* preview on startup */
+      window.simplemde.toggleSideBySide();
     }
   });
 
@@ -463,21 +463,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		codeSyntaxHighlighting: true,
 	},
 	shortcuts: {
-		"togglePreview": "Ctrl-Alt-P", /*  Preview HTML */
-		"toggleSideBySide": "Ctrl-Alt-S", /*  Split Screen */
-		"toggleHeadingSmaller": "Ctrl-Alt-H", /*  Headers */
-		"toggleBold": "Ctrl-Alt-B", /*  Bold */
-		"toggleItalic": "Ctrl-Alt-I", /*  Italicize */
-		"toggleBlockquote": "Ctrl-Alt-Q", /*  Quote */
-		"toggleUnorderedList": "Ctrl-Alt-L", /*  List */
-		"toggleCodeBlock": "Ctrl-Alt-C", /*  Code */
-		"drawTable": "Ctrl-Alt-T", /*  Table */
-		"drawImage": "Ctrl-Alt-M", /*  iMage [sic] */
-		"drawLink": "Ctrl-Alt-U" /*  URL Link */
+		"togglePreview": "Ctrl-Alt-P",
+		"toggleSideBySide": "Ctrl-Alt-S",
+		"toggleHeadingSmaller": "Ctrl-Alt-H",
+		"toggleBold": "Ctrl-Alt-B",
+		"toggleItalic": "Ctrl-Alt-I",
+		"toggleBlockquote": "Ctrl-Alt-Q",
+		"toggleUnorderedList": "Ctrl-Alt-L",
+		"toggleCodeBlock": "Ctrl-Alt-C",
+		"drawTable": "Ctrl-Alt-T",
+		"drawImage": "Ctrl-Alt-M",
+		"drawLink": "Ctrl-Alt-U"
 	},
     spellChecker: false,
     status: false,
-    toolbar: ["preview", "side-by-side", "|", "heading", "bold", "italic", "|", "quote", "unordered-list", "code", "|", "table", "image", "link"]
+    toolbar: [
+		"side-by-side", "preview", "fullscreen",
+		"|", "heading", "bold", "italic",
+		"|", "quote", "unordered-list", "code",
+		"|", "table", "image", "link"
+	]
   });
 
   window.simplemde.toggleFullScreen();
