@@ -444,7 +444,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       if (window.simplemde.isPreviewActive()) {
         window.simplemde.togglePreview();
       }
-      window.simplemde.togglePreview();
+      window.simplemde.toggleSideBySide();
     }
   });
 
@@ -478,7 +478,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     spellChecker: false,
     status: false,
     toolbar: [
-		"preview", "side-by-side",
+		"side-by-side", "preview",
 		"|", "heading", "bold", "italic",
 		"|", "quote", "unordered-list", "code",
 		"|", "table", "image", "link",
